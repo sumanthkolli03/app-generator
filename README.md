@@ -2,9 +2,7 @@
 
 Adds public web apps to [my home server](https://github.com/sumanthkolli03/home-server) from a
 manifest. An app is a folder with a Dockerfile (or a stock image), an `app.toml` and a
-`whitelist.txt`. The generator turns it into the Docker Compose services, internal networks and
-Caddy sites that run it, applies them, and waits until every container is healthy. If one isn't,
-it puts the previous setup back.
+`whitelist.txt`.
 
 ```
 bash generator/apps.sh add my-app.zip --name my-app --kind static --prefix hello   # hello.<public domain>
